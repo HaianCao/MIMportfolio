@@ -1,0 +1,18 @@
+#INTRODUCE{
+    padding-top: 50px;
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+}
+
+.intro{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.intro-details{
+    padding-top: 10px;
+    font-size: x-large;
+}
