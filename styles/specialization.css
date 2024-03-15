@@ -1,0 +1,165 @@
+#SPECIALIZATION{
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.specialization-details-desktop .specialization-titles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.specialization-details-desktop .specialization-titles div{
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.specialization-details-desktop .specialization-titles div:first-child{
+    background-color: rgb(0, 0, 177);
+    color: white;
+    line-height: 50px;
+    box-shadow: 5px 0px 1px rgba(0, 0, 177, 0.537);
+}
+
+.specialization-details-desktop .specialization-titles div:nth-child(2){
+    background-color: rgb(255, 102, 0);
+    color: white;
+    line-height: 50px;
+    box-shadow: 5px 0px 1px rgba(255, 102, 0, 0.555);
+}
+
+.specialization-details-desktop .specialization-titles div:nth-child(3){
+    background-color: rgb(232, 0, 0);
+    color: white;
+    line-height: 50px;
+    box-shadow: 5px 0px 1px rgba(232, 0, 0, 0.542);
+}
+
+.specialization-details-desktop .specialization-titles div:nth-child(4){
+    display: none;
+    background-color: rgb(232, 0, 0);
+    color: white;
+    line-height: 50px;
+    box-shadow: 5px 0px 1px rgba(232, 0, 0, 0.542);
+}
+
+.specialization-details-desktop .specialization-titles div:nth-child(5){
+    background-color: rgb(0, 173, 115);
+    color: white;
+    box-shadow: 5px 0px 1px rgba(0, 173, 115, 0.507)
+}
+
+.specialization-details-desktop .specialization-titles div:nth-child(6){
+    display: none;
+    background-color: rgb(0, 173, 115);
+    color: white;
+    line-height: 50px;
+    box-shadow: 5px 0px 1px rgba(0, 173, 115, 0.507)
+}
+
+@media only screen and (max-width: 1000px){
+    .specialization-details-desktop .specialization-titles div:nth-child(3),
+    .specialization-details-desktop .specialization-titles div:nth-child(5){
+        display: none;
+    }
+
+    .specialization-details-desktop .specialization-titles div:nth-child(4),
+    .specialization-details-desktop .specialization-titles div:nth-child(6){
+        display: block;
+    }
+}
+
+.specialization-info div{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+}
+
+.specialization-info div div:first-child{
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.specialization-info div div:last-child{
+    padding: 20px 5% 20px 5%;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.specialization-info div img{
+    width: 50%;
+}
+
+.specialization-info div:nth-child(2){
+    text-align: center;
+}
+
+.maths{
+    background-color: rgb(0, 0, 177);
+}
+
+.maths-and-informatics{
+    background-color: rgb(255, 102, 0);
+}
+
+.data-science{
+    background-color: rgb(232, 0, 0);
+}
+
+.computer-science{
+    background-color: rgb(0, 173, 115);
+}
+
+.maths-and-informatics, .data-science, .computer-science{
+    display: none;
+}
+
+.specialization-titles-mobile{
+    display: none;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+.specialization-titles-mobile:first-child{
+    background-color: rgb(0, 0, 177);
+}
+
+.specialization-titles-mobile:nth-child(3){
+    background-color: rgb(255, 102, 0);
+}
+
+.specialization-titles-mobile:nth-child(5){
+    background-color: rgb(232, 0, 0);
+}
+
+.specialization-titles-mobile:nth-child(7){
+    background-color: rgb(0, 173, 115);
+}
+
+@media only screen and (max-width: 700px){
+    .specialization-titles{
+        display: none !important;
+    }
+
+    .specialization-info div{
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .specialization-titles-mobile{
+        display: block;
+    }
+
+    .maths{
+        display: none;
+    }
+}

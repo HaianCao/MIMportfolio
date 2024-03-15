@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./styles/navigationBar.css">
     <link rel="stylesheet" href="./styles/slideShow.css">
     <link rel="stylesheet" href="./styles/introduce.css">
+    <link rel="stylesheet" href="./styles/specialization.css">
     <script src="./scripts/navBarMobile.js"></script>
     <script src="./scripts/scripts_slider.js"></script>
+    <script src="./scripts/specialization.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
@@ -24,7 +26,7 @@
             <a href=""></a>
             <a href="#HOME">NHÀ</a>
             <a href="#INTRODUCE">GIỚI THIỆU</a>
-            <a href="">CÁC NGÀNH</a>
+            <a href="#SPECIALIZATION">CÁC NGÀNH</a>
             <a href="">TUYỂN SINH</a>
             <a href=""></a>
         </div>
@@ -62,8 +64,96 @@
         <div class="intro-details">Cuộc cách mạng công nghiệp lần thứ tư mở ra nhiều cơ hội to lớn cùng với những thách thức khó lường nhưng Khoa Toán – Cơ  - Tin học luôn xác định rõ sứ mạng cao cả của Khoa là đào tạo nguồn nhân lực cao trong các lĩnh vực Toán học, Cơ học và Tin học. Khoa phấn đấu trở thành một trung tâm hàng đầu của cả nước và khu vực Đông Nam Á về đào tạo và nghiên cứu trong các lĩnh vực Toán học, Cơ học và Tin học.</div>
     </div>
 
-    <div id="#SPECIALIZATION">
-        
+    <!-- Details about specialization in MIM -->
+    <div id="SPECIALIZATION">
+        <div class="intro">NGÀNH HỌC</div>
+
+        <!-- Details about specialization in desktop version -->
+        <div class="specialization-details-desktop">
+            <div class="specialization-titles">
+                <div onclick="changeSpecialization('maths')">Toán học</div>
+                <div onclick="changeSpecialization('maths-and-informatics')">Toán tin</div>
+                <div onclick="changeSpecialization('data-science')">Khoa học dữ liệu</div>
+                <div onclick="changeSpecialization('data-science')">KHDL</div>
+                <div onclick="changeSpecialization('computer-science')">Khoa học Máy tính<br>và Thông tin</div>
+                <div onclick="changeSpecialization('computer-science')">KHMT&TT</div>
+            </div>
+            <div class="specialization-info">
+                <div class="specialization-titles-mobile" onclick="changeSpecialization('maths')">Toán học</div>
+                <div class="maths specialization-each">
+                    <div>TOÁN HỌC</div>
+                    <div>
+                        <img src="./images/mathSpecialization.webp" alt="">
+                    </div>
+                    <div>
+                        Mục tiêu của chương trình đào tạo đại học ngành Toán học là đào tạo các cử
+                        nhân chuyên sâu về Toán học. Sinh viên sẽ được trang bị các kiến thức, kỹ năng, và
+                        phẩm chất cần thiết để sau khi tốt nghiệp có thể đảm nhận các công việc có sử dụng
+                        kiến thức Toán học như giảng dạy, nghiên cứu, và ứng dụng Toán học vào các lĩnh
+                        vực khoa học, công nghệ, kinh tế, xã hội. Nếu có đủ điều kiện, cử nhân ngành Toán
+                        học có thể đăng kí học tập ở bậc thạc sĩ, tiến sĩ.
+                    </div>
+                </div>
+                <div class="specialization-titles-mobile" onclick="changeSpecialization('maths-and-informatics')">Toán tin</div>
+                <div class="maths-and-informatics specialization-each">
+                    <div>TOÁN TIN</div>
+                    <div>
+                        <img src="./images/mathInfomaticsSpecialization.jpg" alt="">
+                    </div>
+                    <div>
+                        Chương trình đào tạo đại học ngành Toán - Tin ứng dụng nhằm trang bị cho
+                        sinh viên những kiến thức cơ sở vững chắc về Toán học và Tin học, và các kiến
+                        thức chuyên ngành mang tính liên ngành Toán ứng dụng và Tin học. Sinh viên được
+                        đào tạo ngành này do vậy có thể tham gia nhiều vị trí và lĩnh vực công tác khác
+                        nhau, từ các vị trí nghiên cứu chuyên sâu về Toán ứng dụng nhằm đưa ra và phát
+                        triển các phương pháp luận, mô hình trong các lĩnh vực tính toán hình thức, bảo mật
+                        thông tin, tính toán mềm v.v. đến các vị trí đòi hỏi kiến thức Tin học như xây dựng
+                        các công cụ, chương trình máy tính, phục vụ trở lại các mô hình tính toán phức tạp
+                        trong các lĩnh vực tính toán khoa học.
+                    </div>
+                </div>
+                <div class="specialization-titles-mobile" onclick="changeSpecialization('data-science')">Khoa học dữ liệu</div>
+                <div class="data-science specialization-each">
+                    <div>KHOA HỌC DỮ LIỆU</div>
+                    <div>
+                        <img src="./images/dataScience.jpg" alt="">
+                    </div>
+                    <div>
+                        Khoa học dữ liệu sẽ giúp doanh nghiệp giải quyết các vấn đề đang tồn đọng và
+                        phức tạp, giảm thiểu việc không hiệu quả, nâng cao dịch vụ khách hàng và tạo ra cơ hội
+                        mới. Khoa học dữ liệu là một lĩnh vực liên ngành liên quan đến việc nghiên cứu, tìm hiểu
+                        và trích rút thông tin/tri thức từ các tập (rất lớn) dữ liệu tồn tại dưới nhiều các định dạng
+                        khác nhau. Khoa học dữ liệu có ảnh hưởng rộng lớn và trực tiếp đến nhiều lĩnh vực
+                        nghiên cứu ứng dụng khác nhau: từ dịch máy, nhận dạng tiếng nói, robot, công cụ tìm
+                        kiếm, cho đến các ngành khoa học sinh học, y sinh, chăm sóc sức khỏe, khoa học xã hội
+                        và nhân văn.<br><br>
+                        Khoa học dữ liệu dựa trên nền tảng kiến thức của 3 lĩnh vực chính gồm Khoa học
+                        máy tính, thống kê và toán ứng dụng. Đây đều là các thế mạnh của Khoa Toán – Cơ – Tin
+                        học.
+                    </div>
+                </div>
+                <div class="specialization-titles-mobile" onclick="changeSpecialization('computer-science')">Khoa học máy tính và thông tin</div>
+                <div class="computer-science specialization-each">
+                    <div>KHOA HỌC MÁY TÍNH VÀ THÔNG TIN</div>
+                    <div>
+                        <img src="./images/computerScience.jpg" alt="">
+                    </div>
+                    <div>
+                        Chương trình Khoa học Máy tính và Thông tin đào tạo nhân lực có kiến thức
+                        khoa học liên ngành, có khả năng ứng dụng các kiến thức khoa học máy tính và khoa
+                        học tính toán nói chung để giải quyết các vấn đề về tổ chức, lưu trữ, tìm kiếm thông
+                        tin, phát hiện thông tin và tri thức từ dữ liệu. Trong thời đại mà thông tin đóng vai trò
+                        hạ tầng trong sự phát triển kinh tế, chính trị, xã hội cũng như khoa học kĩ thuật trên
+                        toàn cầu, việc đào tạo nhân lực cho lĩnh vực khoa học thông tin là một trong những
+                        vấn đề được Nhà nước ưu tiên phát triển hàng đầu.<br><br>
+                        Chương trình đào tạo ngành Máy tính và khoa học thông tin ở Khoa Toán - Cơ
+                        - Tin học trang bị cho sinh viên những kiến thức cơ bản của ngành, đồng thời cung cấp
+                        các kiến thức chuyên sâu khai thác thế mạnh của khoa học thống kê trong khoa học
+                        thông tin.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
