@@ -58,7 +58,7 @@ function runSlider(){
     slider()
     setInterval(() => {
         slider();
-    }, 20000);
+    }, 18000);
 }
 
 // function start(){
