@@ -21,36 +21,44 @@ function slider(){
     setTimeout(() =>{
         document.querySelector('.slide-show-2 img:nth-child(2)').style.bottom = 0;
         document.querySelector('.slide-show-2 img:nth-child(2)').style.height = '100%';
-    }, 2000);
+    }, 3000);
 
     setTimeout(() => {
         document.querySelector('.slide-show-2 img:nth-child(3)').style.width = '100%';
         document.querySelector('.slide-show-2 img:nth-child(3)').style.left = 0;
-        document.querySelector('.slide-show-2 img:nth-child(2)').style.bottom = '100%';
-        document.querySelector('.slide-show-2 img:nth-child(2)').style.height = 0;
-    }, 4000);
-
-    setTimeout(() => {
-        document.querySelector('.slide-show-2 img:nth-child(4)').style.height = '100%';
-        document.querySelector('.slide-show-2 img:nth-child(3)').style.width = 0;
-        document.querySelector('.slide-show-2 img:nth-child(3)').style.left = '100%';
     }, 6000);
 
     setTimeout(() => {
+        document.querySelector('.slide-show-2 img:nth-child(4)').style.height = '100%';
+        document.querySelector('.slide-show-2 img:nth-child(2)').style.bottom = '100%';
+        document.querySelector('.slide-show-2 img:nth-child(2)').style.height = 0;
+    }, 9000);
+
+    setTimeout(() => {
         document.querySelector('.slide-show-2 img:nth-child(5)').style.width = '100%';
+        document.querySelector('.slide-show-2 img:nth-child(3)').style.width = 0;
+        document.querySelector('.slide-show-2 img:nth-child(3)').style.left = '100%';
+    }, 12000);
+
+    setTimeout(() => {
+        document.querySelector('.slide-show-2 img:nth-child(6)').style.opacity = 1;
         document.querySelector('.slide-show-2 img:nth-child(4)').style.height = 0;
-    }, 8000);
+    }, 15000);
 
     setTimeout(() => {
         document.querySelector('.slide-show-2 img:nth-child(5)').style.width = 0;
-    }, 10000);
+    }, 18000)
+
+    setTimeout(() => {
+        document.querySelector('.slide-show-2 img:nth-child(6)').style.opacity = 0;
+    }, 20000)
 }
 
 function runSlider(){
     slider()
     setInterval(() => {
         slider();
-    }, 15000);
+    }, 20000);
 }
 
 // function start(){

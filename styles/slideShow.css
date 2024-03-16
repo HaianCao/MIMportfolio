@@ -89,5 +89,5 @@
 }
 
 .transition{
-    transition: 1s ease;
+    transition: 2s ease !important;
 }
