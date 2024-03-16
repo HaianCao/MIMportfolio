@@ -36,7 +36,7 @@
         <!-- Navigation bar for mobile version -->
         <div class="nav-mobile">
             <a onclick="menu()"><i class='bx bx-home' style="color: rgb(71, 71, 71); font-size: 70px;"></i></a>
-            <div class="nav-items">
+            <div class="nav-items" style="z-index: 10;">
                 <div>
                     <a onclick="menu()" href="#HOME">NHÀ</a>
                     <a onclick="menu()" href="#INTRODUCE">GIỚI THIỆU</a>
@@ -47,13 +47,24 @@
         </div>
     </div>
 
-    <!-- Slide show -->
+    <!--
+     Slide show
     <div class="slide-show" id="HOME">
-        <img src="./images/toan.png" alt="">
-        <!-- <img src="./images/toanTin.png" alt="">
+        <img class="image" src="./images/toan.png" alt="">
+         <img src="./images/toanTin.png" alt="">
         <img src="./images/khoaHocDuLieu.png" alt="">
         <img src="./images/khoaHocMayTinhVaThongTin.png" alt="">
-        <img src="./images/mim.png" alt=""> -->
+        <img src="./images/mim.png" alt=""> 
+    </div> -->
+
+
+    <div class="slide-show slide-show-2">
+        <img src="./images/mim.png" alt="">
+        <img class="slide-image transition" src="./images/toan.png" alt="">
+        <img class="slide-image transition" src="./images/toanTin.png" alt="">
+        <img class="slide-image transition" src="./images/khoaHocDuLieu.png" alt="">
+        <img class="slide-image transition" src="./images/khoaHocMayTinhVaThongTin.png" alt="">
+        <!-- <img class="slide-image transition" src="./images/mim.png" alt=""> -->
     </div>
 
     <!-- Represent MIM infomation -->
