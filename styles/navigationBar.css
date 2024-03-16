@@ -2,7 +2,7 @@
     position: sticky;
     top: 0px;
     height: 70px; 
-    background-image: linear-gradient(white, rgba(255, 255, 255, 0.164));
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0.396));
 }
 
 .nav-desktop, .background-items-nav{
@@ -37,7 +37,7 @@
     position: absolute;
     height: 1000px;
     right: 0px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.164), white);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.396), white);
 }
 
 .nav-items div{

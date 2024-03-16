@@ -1,0 +1,38 @@
+.space{
+    height: 50px;
+}
+
+#ENROLL{
+    width: 90%;
+    margin: auto;
+    background-color: rgba(8, 0, 255, 0.096);
+    border-radius: 20px;
+    padding: 0px 0 20px 0;
+}
+
+#ENROLL .intro{
+    padding-top: 50px;
+}
+
+.enroll-all-details{
+    width: 90%;
+    margin: auto;
+}
+
+.enroll-all-details div{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.enroll-all-details ul{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.enroll-all-details li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.enroll-all-details li ul li:not(:last-child){
+    margin-bottom: 10px;
+}
